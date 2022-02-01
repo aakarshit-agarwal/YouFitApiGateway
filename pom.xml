@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.fitness</groupId>
-	<artifactId>ApiGateway</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>ApiGateway</name>
-	<description>ApiGateway</description>
+	<artifactId>YouFitApiGateway</artifactId>
+	<version>0.0.1</version>
+	<name>YouFitApiGateway</name>
+	<description>YouFitApiGateway</description>
 	<properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2021.0.0</spring-cloud.version>
@@ -68,6 +68,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>YouFitApiGateway</finalName>
 	</build>
 
 </project>
