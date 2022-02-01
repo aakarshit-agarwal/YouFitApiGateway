@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: ApiGateway
+  cloud:
+    gateway:
+      routes:
+        - id: UserManagementService
+          uri: lb://UserManagementService
+          predicates:
+            - Path=/you-fit/v1/users/**
+        - id: CenterManagementService
+          uri: lb://CenterManagementService
+          predicates:
+            - Path=/you-fit/v1/centers/**
